@@ -1,4 +1,4 @@
-package main
+package httpBasic
 
 import (
 	"encoding/json"
@@ -6,7 +6,8 @@ import (
 	"net/http"
 )
 
-func main() {
+//StartServer starts the server
+func StartServer() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		names := r.URL.Query()["name"]
 		var name string

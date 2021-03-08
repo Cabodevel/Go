@@ -1,4 +1,4 @@
-package main
+package logReader
 
 import (
 	"bufio"
@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func main() {
+func ReadFileLog() {
 	path := flag.String("path", "test.log", "log path")
 	contains := flag.String("contains", "carlos", "string  to search")
 
